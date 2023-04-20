@@ -23,8 +23,7 @@ Your users should be able to:
 
 ### Screenshot
 
-<p><img src="./images/screenshot-desktop.png" alt="screenshot-desktop">
-<img src="./images/screenshot-mobile.png" alt="screenshot-mobile"></p>
+<img src="./images/screenshot-desktop.png" alt="screenshot-desktop">
 
 ### Links
 
