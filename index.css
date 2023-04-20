@@ -1,0 +1,787 @@
+body {
+    margin: 0 auto;
+}
+
+.container-fluid {
+    height: 100vh;  
+}
+
+#mobile #header {
+    background-image: url(./images/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    padding: 0;
+    display: block;
+    height: 520px;
+}
+
+#desktop {
+    display: none;
+}
+
+#nav {
+    padding: 30px;
+}
+
+#nav .logo {
+    vertical-align: super;
+}
+
+#header h1 {
+    margin: 50px 80px 80px;
+    font-size: 1.875rem;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+}
+
+#header .arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#navbar ul {
+    width: 85%;
+    position: absolute;
+    top: 90px;
+    z-index: 2;
+    padding: 30px 0;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+}
+
+#nav button {
+    border: none;
+    padding: 0;
+}
+
+#navbar a {
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#contact {
+    width: 40%;
+    font-size: .9375rem;
+    padding: 10px 0 15px;
+    margin: 10px auto;
+    border-radius: 30px;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    background-color: hsl(51, 100%, 49%);
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+#mainone #imgtransform {
+    background-image: url(./images/mobile/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    display: block;
+    margin: 0;
+    height: 300px;
+}
+
+#descriptransform, #descripstandout {
+    padding: 30px;
+    text-align: center;
+    color: hsl(212, 27%, 19%);
+}
+
+#main h3 {
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+
+#mainsecond #imgstandout {
+    background-image: url(./images/mobile/image-stand-out.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    display: block;
+    margin: 0;
+    height: 300px;
+}
+
+#mainthird #imggraphic {
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    display: block;
+    margin: 0;
+    height: 520px;
+}
+
+#mainthird #imgphoto {
+    background-image: url(./images/mobile/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    display: block;
+    margin: 0;
+    height: 500px;
+}
+
+#descripgraphic, #descripphoto {
+    position: relative;
+    top: 350px;
+    text-align: center;
+    padding: 0 30px;
+}
+
+#descripgraphic {
+    color: hsl(167, 40%, 24%);
+}
+
+#descripphoto {
+    color: hsl(198, 62%, 26%);
+}
+
+#main h4 {
+    font-size: 1.5rem;
+}
+
+#main button {
+    border: none;
+    font-size: .875rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+#descriptransform button:hover {
+    background-color: hsl(51, 100%, 49%);
+}
+
+#descripstandout button:hover {
+    background-color: hsl(7, 99%, 70%);
+}
+
+#section {
+    text-align: center;
+    padding: 30px;
+}
+
+#section h5 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#emily, #jennie, #thomas {
+    margin: 50px auto;
+}
+
+#emily img, #jennie img, #thomas img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 60%;
+    padding-bottom: 10px;
+}
+
+#section .name {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+#article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#image div {
+    padding: 0;
+}
+
+#article img {
+    width: 49.33%;
+    height: auto;
+}
+
+#footer {
+    padding: 30px;
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+#footer .logo {
+    filter: invert(55%) brightness(110%) sepia(120%) hue-rotate(180deg) saturate(350%) contrast(100%);
+}
+
+#footer li {
+    margin: 10px auto;
+    text-align: center;
+}
+
+#footer a {
+    font-weight: 700;
+    color: hsl(168, 34%, 41%);
+}
+
+#social img {
+    padding: 10px 5px;
+}
+
+@media only screen and (min-width: 520px) {
+
+    #mobile #header {
+        height: 770px;
+    }
+
+    #navbar ul {
+        width: 90%;
+        position: absolute;
+        top: 130px;
+    }
+
+    #header h1 {
+        margin: 100px 150px 150px;
+    }         
+
+    #mainone #imgtransform, #mainsecond #imgstandout {
+        height: 490px;
+    }
+
+    #descriptransform, #descripstandout {
+        padding: 70px 120px;
+    }
+
+    #mainthird #imggraphic, #mainthird #imgphoto {
+        height: 700px;
+    }
+
+    #descripgraphic, #descripphoto {
+        top: 500px;
+        padding: 0 70px;
+    }
+
+    #section {
+        padding: 90px 120px;
+    }
+
+    #article img {
+        width: 49.4%;
+    }   
+
+    #footer ul {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+
+    #mobile #header {
+        height: 890px;
+    }
+
+    #header h1 {
+        margin: 150px 200px;
+    }
+
+    #mainthird #imggraphic, #mainthird #imgphoto {
+        height: 750px;
+    }
+
+    #descripgraphic, #descripphoto {
+        top: 570px;
+        padding: 0 150px;
+    }
+
+    #section {
+        padding: 70px 150px;
+    }
+
+    #article img {
+        width: 49.55%;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+
+    #mobile #header {
+        height: 1000px;
+    }
+
+    #header h1 {
+        margin: 150px 250px;
+    }  
+
+    #mainone #imgtransform, #mainsecond #imgstandout {
+        height: 540px;
+    }
+
+    #descriptransform, #descripstandout {
+        padding: 100px 120px;
+    }
+
+    #mainthird #imggraphic, #mainthird #imgphoto {
+        height: 820px;
+    }
+
+    #descripgraphic, #descripphoto {
+        top: 650px;
+        padding: 0 170px;
+    }
+
+    #section {
+        padding: 180px;
+    } 
+}
+
+@media only screen and (min-width: 768px) {
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        width: 100%;
+        display: block;
+    }
+    
+    #desktop #header {
+        background-image: url(./images/desktop/image-header.jpg);
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        background-size: 100%;
+        display: block;
+        padding: 0;
+        height: 420px;
+    }
+
+    #navbar ul {
+        width: auto;
+        position: relative;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        color: hsl(0, 0%, 100%);
+        background-color: transparent;
+    }
+
+    #navbar a {
+        font-size: 1.125rem;
+        font-weight: 700;
+        padding: 0 10px 0;
+    }    
+
+    #contact {
+        margin: 0 0 0 20px;
+        width: 120px;
+        background-color: hsl(0, 0%, 100%);
+    }    
+
+    #contact:hover {
+        color: hsl(0, 0%, 100%);
+        border: 1px solid hsl(0, 0%, 100%);
+        background-color: transparent;
+    }
+
+    #header h1 {
+        margin: 10px 0 20px;
+        font-size: 2.375rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+
+    #main h3 {
+        font-size: 2rem;
+        padding-bottom: 10px;
+    }
+
+    #mainone {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    #mainone #imgtransform {
+        background-image: url(./images/desktop/image-transform.jpg);
+        background-repeat: no-repeat;
+        background-position: 100% 0%;
+        background-size: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
+        height: 320px;
+    }
+    
+    #descriptransform, #descripstandout {
+        padding: 20px 40px;
+        text-align: left;
+        font-size: 1.125rem;
+    }
+
+    #main button {
+        margin-bottom: 0;
+    }    
+
+    #mainsecond, #mainthird, #testimonials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    #mainsecond #imgstandout {
+        background-image: url(./images/desktop/image-stand-out.jpg);
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+        background-size: 100%;
+        display: block;
+        margin: 0;
+        height: 320px;
+    }
+
+    #mainthird #imggraphic {
+        background-image: url(./images/desktop/image-graphic-design.jpg);
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+        background-size: 100%;
+        display: block;
+        margin: 0;
+        height: 320px;
+    }
+    
+    #mainthird #imgphoto {
+        background-image: url(./images/desktop/image-photography.jpg);
+        background-repeat: no-repeat;
+        background-position: 100% 0%;
+        background-size: 100%;
+        display: block;
+        margin: 0;
+        height: 320px;
+    }
+    
+    #main h4 {
+        font-size: 1.625rem;
+    }
+
+    #descripgraphic, #descripphoto {
+        top: 170px;
+        padding: 0;
+        font-size: 1.125rem;
+    }
+
+    #section {
+        padding: 70px 20px;
+        font-size: 1.125rem;
+    }
+
+    #section h5 {
+        font-size: 1.875rem;
+    }
+
+    #title  {
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    #emily img, #jennie img, #thomas img {
+        padding-bottom: 30px;
+    }
+    
+    #section .name {
+        padding-top: 20px;
+    }
+
+    #article {
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+
+    #image div {
+        padding: 0;
+    }
+
+    #article img {
+        width: 24.55%;
+        height: auto;
+    }
+
+    #footer {
+        padding: 50px;
+    }    
+
+    #footer ul {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 840px) {
+
+    #desktop #header {
+        height: 470px;
+    }
+    
+    #descriptransform, #descripstandout {
+        padding: 20px 50px;
+    }
+
+    #mainthird #imggraphic, #mainthird #imgphoto {
+        height: 350px;
+    }
+}
+
+@media only screen and (min-width: 910px) {
+
+    #descripgraphic, #descripphoto {
+        top: 200px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+
+    #desktop #header {
+        height: 500px;
+    }
+
+    #header h1 {
+        margin: 10px 0 40px;
+    }
+
+    #main h3 {
+        font-size: 2.5rem;
+    }    
+
+    #mainone #imgtransform, #mainsecond #imgstandout {
+        height: 390px;
+    }
+    
+    #descriptransform, #descripstandout {
+        padding: 50px;
+    }
+    
+    #main h4 {
+        font-size: 1.875rem;
+        padding-bottom: 10px;
+    }
+
+    #mainthird #imggraphic, #mainthird #imgphoto {
+        height: 400px;
+    }
+
+    #descripgraphic, #descripphoto {
+        top: 220px;
+        padding: 0 30px;
+    }
+
+    #section {
+        padding: 70px 20px;
+        font-size: 1.125rem;
+    }
+
+    #article img {
+        width: 24.65%;
+    }   
+
+    #footer ul {
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    #desktop #header {
+        height: 550px;
+    }
+
+    #header h1 {
+        margin: 20px 0 40px;
+    }    
+
+    #mainone #imgtransform, #mainsecond #imgstandout {
+        height: 390px;
+    }
+    
+    #descriptransform, #descripstandout {
+        padding: 50px 70px;
+    }
+
+    #descripgraphic, #descripphoto {
+        top: 260px;
+        padding: 0 50px;
+    }
+
+    #mainthird #imggraphic, #mainthird #imgphoto {
+        height: 430px;
+    }
+
+    #section {
+        padding: 70px 30px;
+    }
+
+    #article img {
+        width: 24.65%;
+    }   
+
+    #footer ul {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1180px) {
+
+    #desktop #header {
+        height: 650px;
+    }
+
+    #header h1 {
+        margin: 30px 0 80px;
+    }    
+
+    #mainone #imgtransform, #mainsecond #imgstandout {
+        height: 450px;
+    }
+    
+    #descriptransform, #descripstandout {
+        padding: 70px 100px;
+    }
+
+    #mainthird #imggraphic, #mainthird #imgphoto {
+        height: 490px;
+    }
+
+    #descripgraphic, #descripphoto {
+        top: 290px;
+        padding: 0 80px;
+    } 
+}
+
+@media only screen and (min-width: 1280px) {
+
+    #desktop #header {
+        height: 680px;
+    }
+
+    #header h1 {
+        font-size: 3.125rem;
+        margin: 50px 0 90px;
+    }
+
+    #mainone #imgtransform, #mainsecond #imgstandout {
+        height: 490px;
+    }
+    
+    #descriptransform, #descripstandout {
+        padding: 100px 150px;
+    }
+
+    #descripgraphic, #descripphoto {
+        top: 330px;
+    }
+
+    #mainthird #imggraphic {
+        height: 520px;
+    }
+    
+    #mainthird #imgphoto {
+        height: 520px;
+    }
+
+    #descripgraphic, #descripphoto {
+        padding: 0 100px;
+    }
+
+    #section {
+        padding: 70px 170px;
+    }
+
+    #article img {
+        width: 24.735%;
+    }   
+
+    #footer ul {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1360px) {
+
+    #desktop #header {
+        height: 750px;
+    }
+
+    #header h1 {
+        margin: 80px 50px;
+    }  
+
+    #mainone #imgtransform, #mainsecond #imgstandout {
+        height: 550px;
+    }
+    
+    #descriptransform, #descripstandout {
+        padding: 100px 170px;
+    }
+
+    #descripgraphic, #descripphoto {
+        top: 350px;
+    }
+
+    #mainthird #imggraphic, #mainthird #imgphoto {
+        height: 550px;
+    }
+
+    #descripgraphic, #descripphoto {
+        padding: 0 150px;
+    }
+
+    #article img {
+        width: 24.753%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    #desktop #header {
+        height: 800px;
+    }
+
+    #header h1 {
+        margin: 90px 50px;
+    }  
+
+    #mainone #imgtransform {
+        height: 600px;
+    }
+    
+    #descriptransform, #descripstandout {
+        padding: 150px 170px;
+    }
+
+    #mainsecond #imgstandout {
+        height: 600px;
+    }
+
+    #mainthird #imggraphic {
+        height: 600px;
+    }
+    
+    #mainthird #imgphoto {
+        height: 600px;
+    }
+
+    #article img {
+        width: 24.767%;
+    }   
+
+    #footer ul {
+        width: 20%;
+    }
+}
